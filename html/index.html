@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fira Code">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Curriculum</title>
+    <script>
+        function hola(){
+            var name = document.getElementById("name").value;
+            var txt  = "Hola " + name; 
+            alert(txt);
+        }
+        function adios(){
+            document.getElementById()
+        }
+    </script>
+</head>
+<body>
+
+    <Fieldset>
+        <legend>Curriculum Vitae</legend>
+        <div class="header">
+            <div class="photo">
+                <img class="shrek" src="../res/images.png">
+            </div>
+            <div class="title">
+                <h2 class="blue">Shrek Cienaga Fernandes</h2>
+                <table>
+                    <tr>
+                        <td style="text-align: left;"><b>Correo e:</b></td>
+                        <td style="text-align: right;"><a href="mailto:shrek@noentresenmicienaga.com">shrek@noentresenmicienaga.com</a></td>
+                    </tr>
+                    <tr>
+                        <td><br></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: left;"><b>Teléfono:</b></td>
+                        <td style="text-align: right;"><a href="tel:627658821">627658821</a></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="formulario">
+                <b class="blue">Contacta conmigo</b>
+                <form action="">
+                    Nombre 
+                    <input type="text" name="name" id="name">
+                    <input type="submit" onclick="hola()">
+                    <input type="reset" onclick="adios()">
+                </form>
+            </div>
+        </div>
+        <div style="height: 50px; width: 100%;"></div>
+        <div class="block">
+            <h3><b>Estudios</b></h3>
+            <p>
+                <b class="blue">Grado universitario</b><br>
+                Ingeniería Energética <br>
+                <b class="blue">Grado Superior</b><br>
+                Administración de Sistemas Infomáticos en Red <br>
+                Automatización y Robótica Industrial <br>
+                <b class="blue">Grado Medio</b><br>
+                Instalaciones Eléctricas y Automáticas
+            </p>
+        </div>
+        
+    </Fieldset>
+    
+</body>
+</html>
