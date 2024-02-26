@@ -7,13 +7,16 @@
     <link rel="stylesheet" href="../css/style.css">
     <title>Curriculum</title>
     <script>
-        function hola(){
-            var name = document.getElementById("name").value;
-            var txt  = "Hola " + name; 
+        function promptmail(){
+            var jsmail = document.getElementById("mail").value;
+            var jstype = document.getElementById("type").value;
+            var jstext = document.getElementById("coment").value;
+
+            txt="Confirma que tu correo es " + jsmail + 
+                    "\n Tu contacto es por " + jstype +
+                    "\n Y tu mensaje es " + jstext;
+
             alert(txt);
-        }
-        function adios(){
-            document.getElementById()
         }
     </script>
 </head>
@@ -37,32 +40,97 @@
                     </tr>
                     <tr>
                         <td style="text-align: left;"><b>Teléfono:</b></td>
-                        <td style="text-align: right;"><a href="tel:627658821">627658821</a></td>
+                        <td style="text-align: right;"><a href="tel:555555555">555555555</a></td>
                     </tr>
                 </table>
             </div>
             <div class="formulario">
                 <b class="blue">Contacta conmigo</b>
                 <form action="">
-                    Nombre 
-                    <input type="text" name="name" id="name">
-                    <input type="submit" onclick="hola()">
-                    <input type="reset" onclick="adios()">
+                    Correo de contacto
+                    <input type="text" name="mail" id="mail" placeholder="correo electrónico"
+                    pattern=".+@.+[.]com|.+@.+[.]es">
+                    <br><br>
+                    Tipo de contacto
+                    <select name="type" id="type">
+                        <option value="Trabajo">Trabajo</option>
+                        <option value="Apredizaje">Apredeinzaje</option>
+                        <option value="Contacto">Conta  cto</option>
+                        <option value="Otro">Otro</option>
+                    </select>
+                    <br><br>
+                    Mensaje
+                    <textarea name="coment" id="coment" cols="30" rows="7"></textarea>
+                    <br><br>
+                    <input type="submit" name="send" id="send" value="Enviar" onclick="promptmail()">
                 </form>
             </div>
         </div>
-        <div style="height: 50px; width: 100%;"></div>
+        <div style="height: 200px; width: 100%;"></div>
         <div class="block">
-            <h3><b>Estudios</b></h3>
-            <p>
-                <b class="blue">Grado universitario</b><br>
-                Ingeniería Energética <br>
-                <b class="blue">Grado Superior</b><br>
-                Administración de Sistemas Infomáticos en Red <br>
-                Automatización y Robótica Industrial <br>
-                <b class="blue">Grado Medio</b><br>
-                Instalaciones Eléctricas y Automáticas
-            </p>
+            <h3><b class="blue">Filmografia</b></h3>
+            <table>
+                <tr>
+                    <th>Título</th>
+                    <th>Fecha</th>
+                    <th>Personaje</th>
+                    <th>Premios</th>
+                </tr>
+                <tr>
+                    <td>Shrek</td>
+                    <td>
+                        22 de abril de 2001
+                        <img alt="Bandera de Estados Unidos" src="//upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Flag_of_the_United_States.svg/20px-Flag_of_the_United_States.svg.png" decoding="async" width="20" height="11" class="mw-file-element" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Flag_of_the_United_States.svg/30px-Flag_of_the_United_States.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Flag_of_the_United_States.svg/40px-Flag_of_the_United_States.svg.png 2x" data-file-width="1235" data-file-height="650">
+                    </td>
+                    <td>Protagonista (Shrek)</td>
+                    <td>Mejor película animada</td>
+                </tr>
+                <tr>
+                    <td>Shrek 2</td>
+                    <td>
+                        19 de mayo de 2004
+                        <img alt="Bandera de Estados Unidos" src="//upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Flag_of_the_United_States.svg/20px-Flag_of_the_United_States.svg.png" decoding="async" width="20" height="11" class="mw-file-element" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Flag_of_the_United_States.svg/30px-Flag_of_the_United_States.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Flag_of_the_United_States.svg/40px-Flag_of_the_United_States.svg.png 2x" data-file-width="1235" data-file-height="650">
+                    </td>
+                    <td>Protagonista (Shrek)</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Shrek Tercero</td>
+                    <td>
+                        18 de mayo de 2007
+                        <img alt="Bandera de Estados Unidos" src="//upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Flag_of_the_United_States.svg/20px-Flag_of_the_United_States.svg.png" decoding="async" width="20" height="11" class="mw-file-element" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Flag_of_the_United_States.svg/30px-Flag_of_the_United_States.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Flag_of_the_United_States.svg/40px-Flag_of_the_United_States.svg.png 2x" data-file-width="1235" data-file-height="650">
+                    </td>
+                    <td>Protagonista (Shrek)</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Shrek Forever After</td>
+                    <td>
+                        18 de junio de 2010
+                        <img alt="Bandera de Estados Unidos" src="//upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Flag_of_the_United_States.svg/20px-Flag_of_the_United_States.svg.png" decoding="async" width="20" height="11" class="mw-file-element" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Flag_of_the_United_States.svg/30px-Flag_of_the_United_States.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Flag_of_the_United_States.svg/40px-Flag_of_the_United_States.svg.png 2x" data-file-width="1235" data-file-height="650">
+                    </td>
+                    <td>Protagonista (Shrek)</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>El Gato con Botas</td>
+                    <td>
+                        28 de octubre de 2011
+                        <img alt="Bandera de Estados Unidos" src="//upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Flag_of_the_United_States.svg/20px-Flag_of_the_United_States.svg.png" decoding="async" width="20" height="11" class="mw-file-element" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Flag_of_the_United_States.svg/30px-Flag_of_the_United_States.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Flag_of_the_United_States.svg/40px-Flag_of_the_United_States.svg.png 2x" data-file-width="1235" data-file-height="650">
+                    </td>
+                    <td>Cameo (Shrek)</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>El Gato con Botas: el último deseo</td>
+                    <td>
+                        25 de noviembre de 2022
+                        <img alt="Bandera de Estados Unidos" src="//upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Flag_of_the_United_States.svg/20px-Flag_of_the_United_States.svg.png" decoding="async" width="20" height="11" class="mw-file-element" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Flag_of_the_United_States.svg/30px-Flag_of_the_United_States.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Flag_of_the_United_States.svg/40px-Flag_of_the_United_States.svg.png 2x" data-file-width="1235" data-file-height="650">
+                    </td>
+                    <td>Cameo (Shrek)</td>
+                    <td></td>
+                </tr>
+            </table>
         </div>
         
     </Fieldset>

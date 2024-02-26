@@ -44,26 +44,41 @@ body{
     background-color: #ffffff99;
     border-radius: 15px;
     color: #000000;
+    padding: 10px;
 }
 .block{
-    height: 300px;
-    width: 45%;
-    background-color: azure;
+    height: 350px;
+    width: 98%;
+    background-color: #ffffff99;
+    border-radius: 15px;
     padding: 20px;
     float: left;
 }
+.block table{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -65%);
+    background-color: #ffffff99;
+    border-radius: 15px;
+    color: #000000;
+    height: 80%;
+    width: 100%;
+    text-align: center;
+}
 .blue{
-    color: #a4b835;
+    color: #8a9b2e;
     font-family: shrekfont;
 }
 .formulario{
-    height: 500px;
+    height: 400px;
     width: 250px;
     float: left;
     text-align: center;
-    background-color: yellow;
+    background-color: #ffffff99;
+    border-radius: 15px;
 }
 .shrek:hover{
-    transform: scale(1.1);
-    cursor: url(../res/s.cur), auto;
+    transform: scale(1.05);
+    cursor: url(../res/Shrek.cur), auto;
 }
